@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">    
+    <title>Diabetes Predictor</title>
+</head>
+<body>
+    <h1>Diabetes Predictor</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="pregnancies">Pregnancies:</label>
+        <input type="text" name="pregnancies" required><br>
+        <label for="glucose">Glucose:</label>
+        <input type="text" name="glucose" required><br>
+        <label for="blood_pressure">Blood Pressure:</label>
+        <input type="text" name="blood_pressure" required><br>
+        <label for="skin_thickness">Skin Thickness:</label>
+        <input type="text" name="skin_thickness" required><br>
+        <label for="insulin">Insulin:</label>
+        <input type="text" name="insulin" required><br>
+        <label for="bmi">BMI:</label>
+        <input type="text" name="bmi" required><br>
+        <label for="diabetes_pedigree_function">Diabetes Pedigree Function:</label>
+        <input type="text" name="diabetes_pedigree_function" required><br>
+        <label for="age">Age:</label>
+        <input type="text" name="age" required><br>
+        <input type="submit" value="Predict">
+    </form>
+    <span class="footer">
+        Made with ❤️ By Srajan
+    </span>
+</body>
+</html>
+
+
+
